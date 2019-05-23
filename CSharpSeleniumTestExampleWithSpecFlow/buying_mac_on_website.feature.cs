@@ -31,8 +31,8 @@ namespace CSharpSeleniumTestExampleWithSpecFlow
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Buying a MacBook Pro on the website", "As an online customer\r\nI want to choose a MacBook with accessories on the website" +
-                    "\r\nSo so that I can buy it online", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Buying a MacBook Pro on the website", "\tAs an online customer\r\n\tI want to choose a MacBook with accessories on the websi" +
+                    "te\r\n\tSo that I can buy it online", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -72,8 +72,8 @@ namespace CSharpSeleniumTestExampleWithSpecFlow
         
         public virtual void FeatureBackground()
         {
+#line 6
 #line 7
-#line 8
   testRunner.Given("the url ‘https://www.apple.com/uk/’", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
         }
@@ -85,12 +85,12 @@ namespace CSharpSeleniumTestExampleWithSpecFlow
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A MacBook 15” with accessories can be ordered on the website", null, new string[] {
                         "choose"});
-#line 11
+#line 10
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 7
+#line 6
 this.FeatureBackground();
-#line 12
+#line 11
   testRunner.Given("I go to the url", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -107,9 +107,9 @@ this.FeatureBackground();
                         "Silver",
                         "Logic Pro X",
                         "USB-C to USB Adapter"});
-#line 13
+#line 12
   testRunner.When("I choose a MacBook Pro with the following features and accessories", ((string)(null)), table1, "When ");
-#line 16
+#line 15
   testRunner.Then("I can place an order for it.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -122,10 +122,10 @@ this.FeatureBackground();
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("The correct price and VAT are displayed for a MacBook 15” with accessories", null, new string[] {
                         "check"});
-#line 19
+#line 18
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 7
+#line 6
 this.FeatureBackground();
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -137,13 +137,13 @@ this.FeatureBackground();
             table2.AddRow(new string[] {
                         "Display adapter",
                         "19.00"});
-#line 20
+#line 19
   testRunner.Given("when I choose the following items:", ((string)(null)), table2, "Given ");
-#line 24
+#line 23
   testRunner.When("I proceed to the checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 25
+#line 24
   testRunner.Then("a total price of £3187.99 will be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 26
+#line 25
   testRunner.And("£531.34 will be listed for VAT.VAT", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();

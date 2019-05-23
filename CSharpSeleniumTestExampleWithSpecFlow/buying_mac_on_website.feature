@@ -1,8 +1,7 @@
 ﻿Feature: Buying a MacBook Pro on the website 
-
-As an online customer
-I want to choose a MacBook with accessories on the website
-So so that I can buy it online
+	As an online customer
+	I want to choose a MacBook with accessories on the website
+	So that I can buy it online
 
 Background:
   Given the url ‘https://www.apple.com/uk/’
